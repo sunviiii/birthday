@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enter the Key</title>
+<style>
+    **body {**
+
+      **font-family: Arial;**
+
+      **text-align: center;**
+
+      **margin-top: 100px;**
+
+    **}**
+
+    **input {**
+
+      **padding: 10px;**
+
+      **font-size: 16px;**
+
+    **}**
+
+    **button {**
+
+      **padding: 10px 20px;**
+
+      **font-size: 16px;**
+
+      **cursor: pointer;**
+
+    **}**
+
+</style>
+</head>
+<body>
+
+<h2>Enter the Secret Key 🎁</h2>
+
+<input type="EnterKey" id="keyInput" placeholder="Enter key">
+<br><br>
+<button onclick="checkKey()">Submit</button>
+
+<h1 id="message"></h1>
+
+<script>
+    **function checkKey() {**
+
+      **var key = document.getElementById("keyInput").value;**
+
+
+
+      **if (key === "011405") {   // change 1234 to your secret key**
+
+        **document.body.innerHTML = "<h1>🎉 Happy Birthday 🎂🎁</h1>";**
+
+      **} else {**
+
+        **document.getElementById("message").innerText = "❌ Wrong Key!";**
+
+      **}**
+
+    **}**
+
+</script>
+
+</body>
+</html>
